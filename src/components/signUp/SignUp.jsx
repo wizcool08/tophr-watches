@@ -35,9 +35,6 @@ class SignUp extends Component {
         password
       );
 
-      console.log("====>", user);
-      console.log("DISPLAY", displayName);
-
       await createUserProfileDocument(user, { displayName });
 
       //This will clear the form
